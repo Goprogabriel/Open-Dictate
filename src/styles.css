@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f4f1ec;
+  --color-sidebar: #ece8e1;
+  --color-surface: #fbf9f6;
+  --color-raised: #ffffff;
+  --color-ink: #191817;
+  --color-ink-soft: #5f5b56;
+  --color-ink-muted: #89847c;
+  --color-line: #e2ddd5;
+  --color-line-strong: #cac3b9;
+  --color-accent: #3a7258;
+  --color-accent-soft: #ddebe2;
+  --color-recording: #e55d55;
+  --color-warning: #b77a2b;
+  --color-danger: #bd4945;
+  --color-inverse: #faf8f4;
+  --font-sans:
+    Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --shadow-card: 0 1px 2px rgba(25, 24, 23, 0.04), 0 14px 38px rgba(25, 24, 23, 0.06);
+  --shadow-float: 0 18px 70px rgba(17, 16, 15, 0.22);
+}
+
+:root {
+  color: #191817;
+  background: #f4f1ec;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --sidebar-width: 228px;
+  --titlebar-height: 38px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background:
+    radial-gradient(circle at 72% 4%, rgba(255, 255, 255, 0.7), transparent 28rem), #f4f1ec;
+}
+
+html.recorder-window,
+html.recorder-window body,
+html.recorder-window #root {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html.recorder-window {
+  color-scheme: dark;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(58, 114, 88, 0.5);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: #191817;
+  background: #cfe1d6;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: rgba(95, 91, 86, 0.25);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.035em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.tauri-drag-region {
+  -webkit-app-region: drag;
+}
+
+.tauri-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+.page-enter {
+  animation: page-enter 180ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-recording {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.55;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1039px) {
+  :root {
+    --sidebar-width: 76px;
+  }
+}

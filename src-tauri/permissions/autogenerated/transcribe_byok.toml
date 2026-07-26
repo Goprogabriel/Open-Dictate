@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-transcribe-byok"
+description = "Enables the transcribe_byok command without any pre-configured scope."
+commands.allow = ["transcribe_byok"]
+
+[[permission]]
+identifier = "deny-transcribe-byok"
+description = "Denies the transcribe_byok command without any pre-configured scope."
+commands.deny = ["transcribe_byok"]

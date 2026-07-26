@@ -1,0 +1,792 @@
+{
+  "app": {
+    "name": "Open Dictate",
+    "tagline": "Gjør stemmen din om til gjennomarbeidet tekst overalt.",
+    "ready": "Klar for diktering",
+    "notReady": "Oppsett kreves",
+    "backgroundStatus": "Open Dictate kjører i bakgrunnen"
+  },
+  "common": {
+    "actions": {
+      "add": "Legg til",
+      "apply": "Bruk",
+      "back": "Tilbake",
+      "buyMore": "Kjøp flere",
+      "cancel": "Avbryt",
+      "clear": "Tøm",
+      "close": "Lukk",
+      "confirm": "Bekreft",
+      "continue": "Fortsett",
+      "copy": "Kopier",
+      "delete": "Slett",
+      "done": "Ferdig",
+      "edit": "Rediger",
+      "learnMore": "Les mer",
+      "manage": "Administrer",
+      "next": "Neste",
+      "openSettings": "Åpne innstillinger",
+      "refresh": "Oppdater",
+      "remove": "Fjern",
+      "replace": "Erstatt",
+      "reset": "Tilbakestill",
+      "retry": "Prøv igjen",
+      "reuse": "Bruk på nytt",
+      "save": "Lagre",
+      "search": "Søk",
+      "select": "Velg",
+      "showLess": "Vis mindre",
+      "showMore": "Vis mer",
+      "skip": "Hopp over",
+      "test": "Test",
+      "upgrade": "Oppgrader",
+      "viewAll": "Vis alle"
+    },
+    "states": {
+      "active": "Aktiv",
+      "connected": "Tilkoblet",
+      "copied": "Kopiert",
+      "disabled": "Deaktivert",
+      "enabled": "Aktivert",
+      "error": "Noe gikk galt",
+      "inactive": "Inaktiv",
+      "loading": "Laster inn…",
+      "notConnected": "Ikke tilkoblet",
+      "off": "Av",
+      "on": "På",
+      "optional": "Valgfritt",
+      "recommended": "Anbefalt",
+      "saved": "Lagret",
+      "saving": "Lagrer…",
+      "testing": "Tester…",
+      "unavailable": "Ikke tilgjengelig"
+    },
+    "misc": {
+      "all": "Alle",
+      "and": "og",
+      "month": "måned",
+      "monthly": "Månedlig",
+      "never": "Aldri",
+      "today": "I dag",
+      "tomorrow": "I morgen",
+      "unknown": "Ukjent",
+      "yesterday": "I går"
+    }
+  },
+  "languages": {
+    "auto": "Oppdag automatisk",
+    "da": "Dansk",
+    "en": "Engelsk",
+    "no": "Norsk",
+    "sv": "Svensk"
+  },
+  "permissions": {
+    "microphone": {
+      "title": "Mikrofon",
+      "description": "Lar Open Dictate ta opp stemmen din."
+    },
+    "accessibility": {
+      "title": "Tekstinnsetting",
+      "description": "Lar Open Dictate sette inn tekst i det aktive programmet."
+    },
+    "screenRecording": {
+      "title": "Skjermopptak",
+      "description": "Valgfri tilgang for forbedret appkontekst."
+    },
+    "states": {
+      "checking": "Kontrollerer…",
+      "granted": "Tillatt",
+      "denied": "Ikke tillatt",
+      "unknown": "Ikke kontrollert",
+      "required": "Påkrevd",
+      "optional": "Valgfritt"
+    },
+    "actions": {
+      "request": "Gi tilgang",
+      "checkAgain": "Kontroller igjen",
+      "openSystemSettings": "Åpne systeminnstillinger"
+    }
+  },
+  "nav": {
+    "ariaLabel": "Hovednavigasjon",
+    "usage": "Bruk",
+    "history": "Historikk",
+    "prompt": "Prompt",
+    "dictionary": "Ordbok",
+    "profile": "Profil",
+    "settings": "Innstillinger",
+    "readyStatus": "Klar · {{shortcut}}",
+    "openMenu": "Åpne navigasjon",
+    "closeMenu": "Lukk navigasjon"
+  },
+  "onboarding": {
+    "progress": "Trinn {{current}} av {{total}}",
+    "welcome": {
+      "eyebrow": "Skriv like raskt som du tenker",
+      "title": "Velkommen til Open Dictate",
+      "description": "Gjør stemmen din om til gjennomarbeidet tekst overalt.",
+      "detail": "Hold inne én snarvei, snakk naturlig, og se den ferdige teksten dukke opp i hvilken som helst app.",
+      "getStarted": "Kom i gang",
+      "privacy": "Lyden din behandles bare for å lage teksten din."
+    },
+    "language": {
+      "title": "Velg språkene dine",
+      "description": "Angi språket i grensesnittet og språket du vanligvis vil snakke, før Open Dictate starter.",
+      "interfaceLabel": "Appspråk",
+      "interfaceDescription": "Menyer, innstillinger og onboarding bruker dette språket.",
+      "speechLabel": "Primært talespråk",
+      "speechDescription": "Diktering starter med dette språket, og du kan endre det senere i Innstillinger."
+    },
+    "mode": {
+      "title": "Velg hvordan du vil bruke Open Dictate",
+      "description": "Bruk din egen OpenAI API-nøkkel gratis, eller velg den administrerte Pro-opplevelsen.",
+      "free": {
+        "title": "Gratis uten konto",
+        "description": "Bruk din egen OpenAI API-nøkkel. Ingen konto eller abonnement er nødvendig.",
+        "price": "$0",
+        "featureOne": "Alle dikteringsfunksjoner",
+        "featureTwo": "Bruk faktureres direkte av OpenAI",
+        "featureThree": "Nøkkelen lagres sikkert på denne enheten",
+        "cta": "Bruk API-nøkkelen min"
+      },
+      "local": {
+        "title": "Lokal AI",
+        "description": "Helt gratis og privat etter en engangsmodellnedlasting.",
+        "price": "$0",
+        "featureOne": "Lyd og tekst forblir på enheten",
+        "featureTwo": "Fungerer frakoblet etter nedlasting",
+        "featureThree": "Ingen konto, API-nøkkel eller abonnement",
+        "cta": "Sett opp lokal AI"
+      },
+      "pro": {
+        "title": "Open Dictate Pro",
+        "description": "$5/måned inkluderer en fast månedlig tokenkvote.",
+        "price": "$5/måned",
+        "featureOne": "Ingen oppsett av API-nøkkel",
+        "featureTwo": "Abonnementstokens utløper hver måned",
+        "featureThree": "Påfyll på $5, $10 og $20 utløper aldri",
+        "cta": "Opprett konto"
+      }
+    },
+    "setup": {
+      "title": "Konfigurer opplevelsen din",
+      "description": "Påloggingsopplysningene dine er beskyttet og vises aldri i grensesnittet etter oppsettet.",
+      "apiKey": {
+        "title": "Koble til OpenAI API-nøkkelen din",
+        "description": "Nøkkelen krypteres og lagres privat på denne enheten.",
+        "label": "OpenAI API-nøkkel",
+        "placeholder": "sk-…",
+        "show": "Vis nøkkel",
+        "hide": "Skjul nøkkel",
+        "validate": "Test og fortsett",
+        "valid": "API-nøkkelen er tilkoblet",
+        "invalid": "Vi kunne ikke validere denne API-nøkkelen. Kontroller den og prøv igjen.",
+        "help": "Du kan erstatte eller fjerne nøkkelen senere under Innstillinger."
+      },
+      "local": {
+        "title": "Velg kvalitet for lokal AI",
+        "description": "Last ned modellparet som passer best for enheten. Du kan endre det senere i Innstillinger."
+      },
+      "account": {
+        "title": "Opprett kontoen din",
+        "description": "Kontoen holder innstillinger, kvote og fakturering synkronisert.",
+        "signInTitle": "Logg inn på Open Dictate Pro",
+        "signInDescription": "Bruk den eksisterende kontoen din. Hvis abonnementet er aktivt, fortsetter du uten betaling.",
+        "createTab": "Opprett konto",
+        "signInTab": "Logg inn",
+        "name": "Navn",
+        "namePlaceholder": "Navnet ditt",
+        "email": "E-post",
+        "emailPlaceholder": "du@eksempel.no",
+        "password": "Passord",
+        "passwordPlaceholder": "Minst 8 tegn",
+        "create": "Opprett konto",
+        "signInSubmit": "Logg inn og fortsett",
+        "signInError": "Vi kunne ikke logge deg inn. Kontroller e-post og passord, og prøv igjen.",
+        "existing": "Har du allerede en konto?",
+        "signIn": "Logg inn",
+        "terms": "Ved å fortsette godtar du tjenestevilkårene og personvernerklæringen."
+      },
+      "subscription": {
+        "title": "Start Open Dictate Pro",
+        "description": "Få en fast månedlig tokenkvote for $5/måned og en opplevelse uten komplisert oppsett.",
+        "plan": "Open Dictate Pro",
+        "price": "$5 per måned",
+        "renewal": "Fornyes månedlig. Avslutt når som helst.",
+        "included": "Fast antall abonnementstokens inkludert",
+        "allowanceDescription": "Den faste kvoten gjelder i faktureringsmåneden og utløper ved periodens slutt.",
+        "topUp": "Påfyll på $5, $10 eller $20",
+        "topUpDescription": "Kjøp en ekstra tokenpakke ved behov. Kjøpte tokens utløper aldri.",
+        "billingCycle": "Abonnementstokens utløper hver måned",
+        "billingCycleDescription": "Abonnementstokens brukes alltid først og erstattes med en ny kvote i neste faktureringsperiode.",
+        "verificationTitle": "Bekreft e-postadressen for å fortsette",
+        "verificationDescription": "Vi har sendt en bekreftelseslenke til {{email}}. Åpne den, og kom deretter tilbake hit for å fortsette sikkert.",
+        "emailFallback": "e-postadressen din",
+        "verificationCheck": "Jeg har bekreftet e-postadressen",
+        "verificationChecking": "Kontrollerer…",
+        "resendVerification": "Send igjen",
+        "verificationSent": "Bekreftelses-e-post sendt.",
+        "verificationSendError": "Vi kunne ikke sende en bekreftelses-e-post. Vent litt og prøv igjen.",
+        "notVerified": "E-postadressen er ikke bekreftet ennå. Åpne lenken vi sendte, og prøv igjen.",
+        "verificationError": "Vi kunne ikke oppdatere bekreftelsesstatusen. Kontroller forbindelsen og prøv igjen.",
+        "authRequired": "Den sikre økten mangler. Gå tilbake og opprett kontoen på nytt.",
+        "secureTitle": "Sikker betaling",
+        "secureDescription": "Stripe håndterer betalingen. Open Dictate lagrer aldri kortopplysningene dine.",
+        "checkout": "Fortsett til sikker betaling",
+        "opening": "Åpner betaling…",
+        "checkoutOpenedTitle": "Betaling åpnet i nettleseren",
+        "checkoutOpenedDescription": "Fullfør betalingen, og kom deretter tilbake hit for å bekrefte abonnementet.",
+        "browserFallbackTitle": "Betal i nettleseren",
+        "browserFallbackDescription": "Vi kunne ikke åpne betalingssiden automatisk. Kopier betalingslenken og lim den inn i nettleseren.",
+        "retryBrowser": "Prøv å åpne igjen",
+        "openCheckoutLink": "Åpne betalingsside",
+        "copyCheckoutLink": "Kopier betalingslenke",
+        "checkoutLinkCopied": "Betalingslenke kopiert.",
+        "checkoutLinkCopyError": "Vi kunne ikke kopiere betalingslenken. Marker lenken og kopier den manuelt.",
+        "reopen": "Åpne igjen",
+        "verify": "Jeg har fullført betalingen",
+        "verifying": "Kontrollerer…",
+        "createError": "Vi kunne ikke klargjøre den sikre betalingen. Kontroller forbindelsen og prøv igjen.",
+        "configurationError": "Sikker betaling er ikke konfigurert i denne versjonen. Kontakt brukerstøtte.",
+        "openError": "Vi kunne ikke åpne den sikre betalingen. Prøv igjen.",
+        "verifyError": "Vi har ikke mottatt en bekreftelse ennå. Hvis du nettopp har betalt, kan du vente litt og kontrollere igjen.",
+        "confirmed": "Pro-abonnementet ditt er aktivt"
+      }
+    },
+    "permissions": {
+      "title": "Gi Open Dictate tilgang til å fungere overalt",
+      "description": "Disse tillatelsene lar Open Dictate høre deg og sette inn tekst i appen du bruker.",
+      "continueWhenReady": "Fortsett når de nødvendige tillatelsene er gitt",
+      "microphone": {
+        "title": "Mikrofon",
+        "description": "Kreves for å ta opp stemmen din."
+      },
+      "accessibility": {
+        "title": "Tekstinnsetting",
+        "description": "Kreves for å sette inn den ferdige teksten i det aktive programmet."
+      },
+      "screenRecording": {
+        "title": "Skjermopptak",
+        "description": "Valgfritt. Brukes bare for forbedret appkontekst når det er aktivert."
+      },
+      "startup": {
+        "title": "Start ved innlogging",
+        "description": "Hold Open Dictate klart hver gang du logger inn."
+      },
+      "states": {
+        "checking": "Kontrollerer…",
+        "granted": "Tillatt",
+        "notGranted": "Ikke tillatt",
+        "required": "Påkrevd",
+        "request": "Gi tilgang"
+      }
+    },
+    "practice": {
+      "title": "Prøv din første diktering",
+      "description": "Plasser markøren nedenfor, hold inne {{shortcut}}, snakk, og slipp deretter tastene.",
+      "sample": "Prøv å si: «Hei, kan du sende meg den e-posten i morgen—faktisk på fredag?»",
+      "fieldPlaceholder": "Den gjennomarbeidede teksten din vises her…",
+      "waiting": "Venter på at du holder inne {{shortcut}}",
+      "listening": "Fortsett å holde tastene inne mens du snakker",
+      "successTitle": "Du er klar til å diktere",
+      "successDescription": "Open Dictate kan nå gjøre stemmen din om til gjennomarbeidet tekst i hvilken som helst app.",
+      "finish": "Begynn å bruke Open Dictate",
+      "tryAgain": "Tøm og prøv igjen"
+    }
+  },
+  "hud": {
+    "shortcut": "Hold inne {{shortcut}} for å diktere",
+    "releaseToFinish": "Slipp for å fullføre",
+    "escapeToCancel": "Esc for å avbryte",
+    "states": {
+      "starting": "Starter…",
+      "listening": "Lytter…",
+      "processing": "Behandler lyd…",
+      "transcribing": "Transkriberer…",
+      "polishing": "Finpusser teksten din…",
+      "inserting": "Setter inn tekst…",
+      "inserted": "Tekst satt inn",
+      "cancelled": "Diktering avbrutt"
+    },
+    "errors": {
+      "generic": "Dikteringen mislyktes. Prøv igjen.",
+      "microphone": "Tilgang til mikrofonen er nødvendig",
+      "accessibility": "Tillatelse til tekstinnsetting er nødvendig",
+      "offline": "Du er frakoblet. Kontroller forbindelsen.",
+      "noSpeech": "Ingen tale oppdaget",
+      "tooShort": "Fortsett å holde tastene inne mens du snakker",
+      "transcription": "Vi kunne ikke transkribere dette opptaket",
+      "insertion": "Teksten kunne ikke settes inn. Den ble kopiert i stedet.",
+      "apiKey": "Kontroller OpenAI API-nøkkelen under Innstillinger",
+      "authentication": "Logg inn igjen for å bruke diktering",
+      "emailVerification": "Bekreft e-postadressen din før du bruker diktering",
+      "apiQuota": "OpenAI API-prosjektet ditt har ingen tilgjengelige kreditter",
+      "rateLimit": "OpenAI begrenser forespørsler akkurat nå. Prøv igjen om litt.",
+      "allowance": "Tokenkvoten din er tom",
+      "localModel": "Installer eller reparer de valgte lokale AI-modellene i Innstillinger"
+    },
+    "actions": {
+      "copyText": "Kopier tekst",
+      "openPermissions": "Åpne tillatelser",
+      "openApiSettings": "Åpne API-innstillinger",
+      "purchaseTokens": "Kjøp tokens"
+    }
+  },
+  "usage": {
+    "title": "Bruk",
+    "subtitle": "Se hvordan stemmen din sparer tid og holder arbeidet i gang.",
+    "period": {
+      "thisMonth": "Denne måneden",
+      "lastMonth": "Forrige måned",
+      "last30Days": "Siste 30 dager",
+      "selectMonth": "Velg måned"
+    },
+    "hero": {
+      "eyebrow": "Tid vunnet tilbake",
+      "title": "Du sparte omtrent {{time}} denne måneden",
+      "description": "Det er tid du kunne brukt på å tenke i stedet for å skrive.",
+      "increase": "{{value}} mer enn forrige måned",
+      "decrease": "{{value}} mindre enn forrige måned",
+      "noComparison": "Begynn å diktere for å se den månedlige sammenligningen"
+    },
+    "metrics": {
+      "dictationTime": "Samlet dikteringstid",
+      "speakingTime": "Samlet taletid",
+      "wordsGenerated": "Genererte ord",
+      "timeSaved": "Anslått spart skrivetid",
+      "dictations": "Dikteringer"
+    },
+    "chart": {
+      "title": "Månedlig aktivitet",
+      "minutes": "Minutter",
+      "words": "Ord",
+      "tokens": "Tokens",
+      "empty": "Aktiviteten din vises etter den første dikteringen"
+    },
+    "allowance": {
+      "title": "Tokenkvote",
+      "used": "{{used}} av {{total}} tokens brukt",
+      "remaining": "{{count}} tokens igjen",
+      "totalRemaining": "{{count}} igjen totalt",
+      "subscriptionTokens": "Abonnement · utløper månedlig",
+      "purchasedTokens": "Kjøpte · utløper aldri",
+      "subscriptionFirst": "Abonnementstokens brukes først.",
+      "expires": "De utløper {{date}}.",
+      "expiresMonthly": "De utløper ved slutten av hver faktureringsmåned.",
+      "purchasedOnly": "Abonnementet ditt er inaktivt. Kjøpte tokens er fortsatt tilgjengelige og utløper aldri.",
+      "renews": "Fornyes {{date}}",
+      "managed": "Inkludert med Open Dictate Pro",
+      "byok": "Bruken faktureres via OpenAI-kontoen din",
+      "local": "All behandling kjører privat på denne enheten",
+      "low": "Tokenkvoten din begynner å bli lav",
+      "empty": "Du har brukt opp denne månedens kvote"
+    },
+    "plan": {
+      "title": "Abonnement",
+      "free": "Gratis · Egen API-nøkkel",
+      "local": "Lokal AI",
+      "pro": "Open Dictate Pro",
+      "balance": "Saldo for kjøpte tokens",
+      "active": "Abonnementet ditt er aktivt",
+      "pastDue": "Betalingen krever handling",
+      "inactive": "Intet aktivt abonnement",
+      "manageBilling": "Administrer fakturering"
+    },
+    "calculation": {
+      "title": "Slik beregnes spart tid",
+      "description": "Vi sammenligner taletempoet ditt med en gjennomsnittlig skrivehastighet på 45 ord i minuttet."
+    },
+    "recent": {
+      "title": "Nylig aktivitet",
+      "empty": "Ingen dikteringer hittil denne måneden"
+    }
+  },
+  "history": {
+    "title": "Historikk",
+    "subtitle": "Finn, kopier og bruk tidligere dikteringer på nytt.",
+    "searchPlaceholder": "Søk i diktert tekst…",
+    "resultCount_one": "{{count}} diktering",
+    "resultCount_other": "{{count}} dikteringer",
+    "filters": {
+      "application": "Program",
+      "date": "Dato",
+      "allApplications": "Alle programmer",
+      "allDates": "Alle datoer",
+      "clear": "Tøm filtre"
+    },
+    "groups": {
+      "today": "I dag",
+      "yesterday": "I går",
+      "earlier": "Tidligere"
+    },
+    "item": {
+      "unknownApplication": "Ukjent program",
+      "duration": "{{duration}} opptak",
+      "copied": "Tekst kopiert",
+      "reused": "Teksten er klar til å brukes på nytt"
+    },
+    "details": {
+      "title": "Dikteringsdetaljer",
+      "generatedText": "Generert tekst",
+      "application": "Program",
+      "created": "Opprettet",
+      "duration": "Varighet",
+      "language": "Språk",
+      "tokens": "Tokens brukt"
+    },
+    "delete": {
+      "title": "Vil du slette denne dikteringen?",
+      "description": "Dette fjerner dikteringen fra historikken. Handlingen kan ikke angres.",
+      "confirm": "Slett diktering",
+      "success": "Diktering slettet",
+      "undo": "Angre"
+    },
+    "empty": {
+      "title": "Dikteringene dine vises her",
+      "description": "Hold inne {{shortcut}} hvor som helst for å lage den første."
+    },
+    "noResults": {
+      "title": "Ingen dikteringer funnet",
+      "description": "Prøv et annet søk eller tøm filtrene."
+    },
+    "loadMore": "Last inn mer historikk"
+  },
+  "prompt": {
+    "title": "Prompt",
+    "subtitle": "Fortell Open Dictate hvordan den ferdige teksten skal høres ut.",
+    "saveStatus": {
+      "saved": "Alle endringer er lagret",
+      "saving": "Lagrer endringer…",
+      "error": "Endringene kunne ikke lagres",
+      "localOnly": "Lagret på denne enheten"
+    },
+    "presets": {
+      "title": "Start med en stil",
+      "professional": "Profesjonell",
+      "concise": "Kortfattet",
+      "technical": "Teknisk",
+      "danish": "Skriv på dansk",
+      "writeInLanguage": "Skriv på {{language}}"
+    },
+    "editor": {
+      "label": "Tilpassede instruksjoner",
+      "placeholder": "For eksempel: Skriv alltid profesjonelle e-poster. Hold tonen varm og kortfattet.",
+      "description": "Instruksjonene brukes etter transkriberingen og før teksten settes inn.",
+      "characterCount": "{{count}} av {{max}} tegn",
+      "clearTitle": "Vil du tømme de tilpassede instruksjonene?",
+      "clearDescription": "Open Dictate går tilbake til standardbehandlingen av tekst."
+    },
+    "behaviors": {
+      "title": "Standardbehandling",
+      "removeFillers": "Fjern fyllord",
+      "removeFillersDescription": "Fjern ord som «eh», «øh» og gjentatte starter.",
+      "punctuation": "Rett tegnsetting",
+      "punctuationDescription": "Legg til tegnsetting og store bokstaver automatisk.",
+      "formatLists": "Formater lister",
+      "formatListsDescription": "Gjør muntlige oppramsinger om til lesbare lister når det passer."
+    },
+    "preview": {
+      "title": "Direkte forhåndsvisning",
+      "input": "Det du sa",
+      "output": "Open Dictate skriver",
+      "sampleInput": "hei kan du sende meg den e-posten i morgen eh faktisk på fredag",
+      "sampleOutput": "Hei, kan du sende meg den e-posten i morgen—faktisk på fredag?",
+      "empty": "Legg til instruksjoner for å forhåndsvise skrivestilen din."
+    },
+    "examples": {
+      "title": "Ideer til prompten din",
+      "professional": "Skriv alltid profesjonelle e-poster.",
+      "language": "Skriv resultatet på {{language}}.",
+      "detail": "Gjør tekniske forklaringer detaljerte."
+    }
+  },
+  "dictionary": {
+    "title": "Ordbok",
+    "subtitle": "Lær Open Dictate navnene og faguttrykkene som betyr noe for deg.",
+    "addTerm": "Legg til uttrykk",
+    "searchPlaceholder": "Søk i ordboken din…",
+    "count_one": "{{count}} uttrykk",
+    "count_other": "{{count}} uttrykk",
+    "columns": {
+      "heardAs": "Oppfattet som",
+      "writeAs": "Skriv som",
+      "language": "Språk",
+      "updated": "Oppdatert"
+    },
+    "form": {
+      "addTitle": "Legg til et uttrykk",
+      "editTitle": "Rediger uttrykk",
+      "description": "Open Dictate bruker rettelsen når transkripsjonen finpusses.",
+      "wrongLabel": "Når jeg sier",
+      "wrongPlaceholder": "supabace",
+      "correctLabel": "Skriv",
+      "correctPlaceholder": "Supabase",
+      "languageLabel": "Språk",
+      "allLanguages": "Alle språk",
+      "preview": "«{{wrong}}» blir skrevet som «{{correct}}»",
+      "add": "Legg til i ordboken",
+      "save": "Lagre endringer",
+      "required": "Fyll ut både den muntlige og den skriftlige formen",
+      "duplicate": "Denne rettelsen finnes allerede"
+    },
+    "delete": {
+      "title": "Vil du fjerne dette uttrykket?",
+      "description": "Open Dictate bruker ikke lenger denne rettelsen.",
+      "confirm": "Fjern uttrykk",
+      "success": "Uttrykk fjernet",
+      "undo": "Angre"
+    },
+    "empty": {
+      "title": "Bygg din personlige ordbok",
+      "description": "Legg til produktnavn, personer, selskaper og faguttrykk, slik at de alltid skrives riktig.",
+      "examples": "Prøv Supabase, React Native, Cloudflare eller OpenAI."
+    },
+    "noResults": {
+      "title": "Ingen uttrykk funnet",
+      "description": "Prøv et annet søk."
+    },
+    "import": {
+      "title": "Importer uttrykk",
+      "description": "Legg til flere uttrykk fra en CSV-fil.",
+      "action": "Importer CSV"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "subtitle": "Administrer konto, abonnement og faktureringsopplysninger.",
+    "identity": {
+      "title": "Personopplysninger",
+      "name": "Navn",
+      "email": "E-post",
+      "emailVerified": "E-post bekreftet",
+      "emailNotVerified": "E-post ikke bekreftet",
+      "verifyEmail": "Send bekreftelses-e-post",
+      "verificationSent": "Bekreftelses-e-post sendt.",
+      "verificationError": "Vi kunne ikke sende en bekreftelses-e-post. Vent litt og prøv igjen.",
+      "updated": "Profil oppdatert"
+    },
+    "plan": {
+      "title": "Abonnementet ditt",
+      "free": "Gratis uten konto",
+      "freeDescription": "Du bruker din egen OpenAI API-nøkkel og betaler OpenAI direkte.",
+      "local": "Lokal AI",
+      "localDescription": "Gratis, privat og behandlet helt på denne enheten.",
+      "change": "Bytt plan",
+      "pro": "Open Dictate Pro",
+      "proDescription": "$5/måned med en fast månedlig tokenkvote.",
+      "balance": "Saldo for kjøpte tokens",
+      "balanceDescription": "Abonnementet ditt er inaktivt, men kjøpte tokens er fortsatt tilgjengelige og utløper aldri.",
+      "price": "$5/måned",
+      "status": "Betalingsstatus",
+      "renews": "Fornyes {{date}}",
+      "cancels": "Avsluttes {{date}}",
+      "pastDue": "Den siste betalingen din mislyktes",
+      "cancelled": "Abonnement avsluttet",
+      "inactive": "Intet aktivt abonnement"
+    },
+    "tokens": {
+      "title": "Gjenværende tokens",
+      "total": "Totalt antall tilgjengelige tokens",
+      "subscription": "Abonnement · utløper månedlig",
+      "purchased": "Kjøpte · utløper aldri",
+      "remaining": "{{count}} igjen",
+      "used": "{{count}} brukt i denne perioden",
+      "resets": "Kvoten tilbakestilles {{date}}",
+      "extra": "Kjøpte tokens utløper ikke",
+      "subscriptionFirst": "Abonnementstokens brukes først.",
+      "expires": "De utløper {{date}}.",
+      "expiresMonthly": "De utløper ved slutten av hver faktureringsmåned.",
+      "purchasedOnly": "Abonnementet ditt er inaktivt. Kjøpte tokens er fortsatt tilgjengelige og utløper aldri."
+    },
+    "billing": {
+      "title": "Fakturering",
+      "manage": "Administrer fakturering",
+      "purchase": "Kjøp flere tokens",
+      "history": "Faktureringshistorikk",
+      "date": "Dato",
+      "description": "Beskrivelse",
+      "amount": "Beløp",
+      "status": "Status",
+      "invoice": "Faktura",
+      "paid": "Betalt",
+      "pending": "Venter",
+      "failed": "Mislyktes",
+      "empty": "Ingen faktureringshistorikk ennå"
+    },
+    "topup": {
+      "title": "Legg til flere tokens",
+      "description": "Velg en tokenpakke for Open Dictate-saldoen din.",
+      "tokenPack": "Tokenpakke",
+      "tokens": "{{count}} tokens",
+      "neverExpires": "Kjøpte tokens utløper aldri.",
+      "subscriptionFirst": "Open Dictate bruker abonnementstokens først og deretter den kjøpte saldoen.",
+      "continue": "Fortsett med {{amount}}"
+    },
+    "security": {
+      "title": "Kontosikkerhet",
+      "password": "Passord",
+      "changePassword": "Endre passord",
+      "signOutEverywhere": "Logg ut på alle enheter"
+    },
+    "guest": {
+      "title": "Du bruker Open Dictate uten konto",
+      "description": "Opprett en konto for å bruke Open Dictate Pro og synkronisere innstillinger mellom enheter.",
+      "createAccount": "Opprett konto"
+    }
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "subtitle": "Velg hvordan Open Dictate skal fungere på denne enheten.",
+    "general": {
+      "title": "Generelt",
+      "interfaceLanguage": "Språk i grensesnittet",
+      "interfaceLanguageDescription": "Endrer menyer, etiketter og meldinger i Open Dictate.",
+      "launchAtStartup": "Start ved innlogging",
+      "launchAtStartupDescription": "Hold Open Dictate klart når du logger inn.",
+      "runInBackground": "Kjør i bakgrunnen",
+      "runInBackgroundDescription": "Hold diktering tilgjengelig når hovedvinduet er lukket."
+    },
+    "dictation": {
+      "title": "Diktering",
+      "shortcut": "Global snarvei",
+      "shortcutDescription": "Hold snarveien inne for å ta opp, og slipp for å fullføre.",
+      "recordShortcut": "Registrer en ny snarvei",
+      "pressShortcut": "Trykk og hold inne tastene du ønsker…",
+      "shortcutConflict": "Denne snarveien brukes allerede av en annen handling.",
+      "microphone": "Mikrofon",
+      "microphoneDescription": "Velg inngangen Open Dictate skal ta opp fra.",
+      "systemDefault": "Systemstandard",
+      "testMicrophone": "Test mikrofon",
+      "stopTest": "Stopp test",
+      "inputLevel": "Inngangsnivå",
+      "noMicrophones": "Ingen mikrofoner funnet",
+      "transcriptionLanguage": "Transkripsjonsspråk",
+      "transcriptionLanguageDescription": "Velg et språk, eller la Open Dictate oppdage det automatisk."
+    },
+    "ai": {
+      "title": "AI-plan og lokale modeller",
+      "description": "Bytt behandlingsmetode når som helst. Lokal AI sender aldri lyd eller tekst fra enheten.",
+      "currentPlan": "Gjeldende behandlingsplan",
+      "switchPlan": "Bytt plan",
+      "switchPlanDescription": "Bruk en API-nøkkel, lokal AI eller Open Dictate Pro.",
+      "mode": {
+        "free": "Egen API-nøkkel",
+        "freeDescription": "OpenAI behandler diktering med den sikkert lagrede API-nøkkelen din.",
+        "local": "Lokal AI",
+        "localDescription": "Whisper og Qwen kjører helt på denne enheten.",
+        "pro": "Open Dictate Pro",
+        "proDescription": "Open Dictate håndterer behandlingen sikkert gjennom Pro-planen din."
+      },
+      "localSetupTitle": "Lokale AI-modeller",
+      "localSetupDescription": "Velg et kvalitetsnivå og last ned modellene.",
+      "uninstallTitle": "Avinstaller lokal AI",
+      "uninstallDescription": "Slett alle nedlastede AI-modeller og frigjør diskplassen.",
+      "uninstallConfirmDescription": "Alle nedlastede lokale AI-modeller slettes fra enheten. Du kan laste dem ned igjen senere.",
+      "uninstall": "Avinstaller modeller"
+    },
+    "api": {
+      "title": "API-konfigurasjon",
+      "managedTitle": "Administrert av Open Dictate Pro",
+      "managedDescription": "Abonnementet ditt håndterer transkripsjonsforespørsler sikkert. Ingen API-nøkkel lagres på denne enheten.",
+      "keyTitle": "OpenAI API-nøkkel",
+      "keyDescription": "Nøkkelen krypteres og lagres privat på denne enheten.",
+      "keyConnected": "API-nøkkelen er tilkoblet",
+      "keyMissing": "Ingen API-nøkkel er tilkoblet",
+      "maskedKey": "Lagret nøkkel som slutter på {{suffix}}",
+      "replaceKey": "Erstatt API-nøkkel",
+      "removeKey": "Fjern API-nøkkel",
+      "removeTitle": "Vil du fjerne API-nøkkelen?",
+      "removeDescription": "Diktering slutter å fungere til en ny nøkkel er koblet til.",
+      "testSuccess": "Tilkoblingen fungerer",
+      "testFailure": "Tilkoblingen mislyktes. Kontroller nøkkelen og prøv igjen."
+    },
+    "permissions": {
+      "title": "Tillatelser",
+      "description": "Open Dictate ber bare om tilgang som er nødvendig for funksjonene du bruker.",
+      "microphone": "Mikrofon",
+      "microphoneDescription": "Lar Open Dictate ta opp stemmen din.",
+      "accessibility": "Tekstinnsetting",
+      "accessibilityDescription": "Lar Open Dictate sette inn tekst i den aktive appen.",
+      "screenRecording": "Skjermopptak",
+      "screenRecordingDescription": "Valgfri tilgang for forbedret appkontekst.",
+      "statusGranted": "Tillatt",
+      "statusDenied": "Ikke tillatt",
+      "statusUnknown": "Ikke kontrollert",
+      "checkAgain": "Kontroller igjen",
+      "openSystemSettings": "Åpne systeminnstillinger"
+    },
+    "privacy": {
+      "title": "Personvern",
+      "saveHistory": "Lagre dikteringshistorikk",
+      "saveHistoryDescription": "Behold generert tekst, slik at du kan finne og bruke den på nytt senere.",
+      "retention": "Lagring av historikk",
+      "retentionDescription": "Velg når gamle dikteringer skal slettes automatisk.",
+      "retention7": "7 dager",
+      "retention30": "30 dager",
+      "retention90": "90 dager",
+      "retention365": "1 år",
+      "analytics": "Del anonym bruksstatistikk",
+      "analyticsDescription": "Bidra til bedre stabilitet uten å dele lyd eller diktert tekst.",
+      "crashReports": "Send krasjrapporter",
+      "crashReportsDescription": "Del teknisk diagnostikk når appen støter på et problem.",
+      "clearCache": "Tøm lokal hurtigbuffer",
+      "clearCacheDescription": "Fjern hurtiglagret historikk og midlertidig lyd fra denne enheten.",
+      "clearCacheTitle": "Vil du tømme den lokale hurtigbufferen?",
+      "clearCacheConfirm": "Tøm hurtigbuffer",
+      "clearCacheSuccess": "Lokal hurtigbuffer tømt"
+    },
+    "session": {
+      "title": "Økt",
+      "signedInAs": "Logget inn som {{email}}",
+      "localProfile": "Bruker uten innlogging",
+      "localProfileDescription": "Open Dictate bruker din egen OpenAI API-nøkkel på denne enheten.",
+      "signOut": "Logg ut",
+      "signOutTitle": "Vil du logge ut av Open Dictate?",
+      "signOutDescription": "Nedlastede lokale AI-modeller slettes fra denne enheten.",
+      "localSignOutTitle": "Slett alt og logg ut?",
+      "localSignOutDescription": "Du bruker Open Dictate uten innlogging med din egen API-nøkkel. Når du fortsetter, sletter vi API-nøkkelen, historikken, ordboken, instruksjonene og lokale innstillinger og logger deg ut. Dette kan ikke angres.",
+      "localSignOutConfirm": "Slett alt og logg ut"
+    },
+    "danger": {
+      "title": "Faresone",
+      "deleteAccount": "Slett konto",
+      "deleteAccountDescription": "Slett konto, skyhistorikk og abonnementsdata permanent.",
+      "deleteAccountTitle": "Vil du slette kontoen permanent?",
+      "deleteAccountConfirm": "Slett kontoen min",
+      "deleteAccountWarning": "Handlingen kan ikke angres."
+    }
+  },
+  "localAi": {
+    "quality": {
+      "low": "Lav",
+      "medium": "Middels",
+      "high": "Høy"
+    },
+    "installed": "Modellene er klare",
+    "downloading": "Laster ned modeller…",
+    "downloadRequired": "Nedlasting kreves",
+    "downloadProgress": "Nedlastingsstatus for lokale modeller",
+    "privacy": "Etter nedlasting forblir all lyd- og tekstbehandling på denne enheten og fungerer uten internett.",
+    "downloadError": "Nedlastingen kunne ikke fullføres. Kontroller tilkobling og diskplass, og prøv igjen; delvise nedlastinger fortsetter automatisk.",
+    "useModels": "Bruk lokal AI",
+    "downloadAndContinue": "Last ned og fortsett"
+  },
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "invalidEmail": "Skriv inn en gyldig e-postadresse",
+    "passwordLength": "Bruk minst 8 tegn",
+    "tooLong": "Bruk færre enn {{max}} tegn"
+  },
+  "errors": {
+    "generic": "Noe gikk galt. Prøv igjen.",
+    "offline": "Du er frakoblet. Kontroller forbindelsen.",
+    "unauthorized": "Økten din har utløpt. Logg inn igjen.",
+    "notFound": "Vi fant ikke det du lette etter.",
+    "rateLimited": "For mange forespørsler. Vent litt og prøv igjen."
+  },
+  "time": {
+    "secondsShort": "{{count}} sek",
+    "minutesShort": "{{count}} min",
+    "hoursShort": "{{count}} t",
+    "hoursAndMinutes": "{{hours}} t {{minutes}} min"
+  }
+}

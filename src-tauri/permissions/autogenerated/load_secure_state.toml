@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-load-secure-state"
+description = "Enables the load_secure_state command without any pre-configured scope."
+commands.allow = ["load_secure_state"]
+
+[[permission]]
+identifier = "deny-load-secure-state"
+description = "Denies the load_secure_state command without any pre-configured scope."
+commands.deny = ["load_secure_state"]

@@ -1,0 +1,792 @@
+{
+  "app": {
+    "name": "Open Dictate",
+    "tagline": "Turn your voice into polished text everywhere.",
+    "ready": "Ready to dictate",
+    "notReady": "Setup required",
+    "backgroundStatus": "Open Dictate is running in the background"
+  },
+  "common": {
+    "actions": {
+      "add": "Add",
+      "apply": "Apply",
+      "back": "Back",
+      "buyMore": "Buy more",
+      "cancel": "Cancel",
+      "clear": "Clear",
+      "close": "Close",
+      "confirm": "Confirm",
+      "continue": "Continue",
+      "copy": "Copy",
+      "delete": "Delete",
+      "done": "Done",
+      "edit": "Edit",
+      "learnMore": "Learn more",
+      "manage": "Manage",
+      "next": "Next",
+      "openSettings": "Open settings",
+      "refresh": "Refresh",
+      "remove": "Remove",
+      "replace": "Replace",
+      "reset": "Reset",
+      "retry": "Try again",
+      "reuse": "Reuse",
+      "save": "Save",
+      "search": "Search",
+      "select": "Select",
+      "showLess": "Show less",
+      "showMore": "Show more",
+      "skip": "Skip",
+      "test": "Test",
+      "upgrade": "Upgrade",
+      "viewAll": "View all"
+    },
+    "states": {
+      "active": "Active",
+      "connected": "Connected",
+      "copied": "Copied",
+      "disabled": "Disabled",
+      "enabled": "Enabled",
+      "error": "Something went wrong",
+      "inactive": "Inactive",
+      "loading": "Loading…",
+      "notConnected": "Not connected",
+      "off": "Off",
+      "on": "On",
+      "optional": "Optional",
+      "recommended": "Recommended",
+      "saved": "Saved",
+      "saving": "Saving…",
+      "testing": "Testing…",
+      "unavailable": "Unavailable"
+    },
+    "misc": {
+      "all": "All",
+      "and": "and",
+      "month": "month",
+      "monthly": "Monthly",
+      "never": "Never",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "unknown": "Unknown",
+      "yesterday": "Yesterday"
+    }
+  },
+  "languages": {
+    "auto": "Detect automatically",
+    "da": "Danish",
+    "en": "English",
+    "no": "Norwegian",
+    "sv": "Swedish"
+  },
+  "permissions": {
+    "microphone": {
+      "title": "Microphone",
+      "description": "Allows Open Dictate to record your voice."
+    },
+    "accessibility": {
+      "title": "Text insertion",
+      "description": "Allows Open Dictate to insert text into the focused application."
+    },
+    "screenRecording": {
+      "title": "Screen recording",
+      "description": "Optional access for enhanced application context."
+    },
+    "states": {
+      "checking": "Checking…",
+      "granted": "Allowed",
+      "denied": "Not allowed",
+      "unknown": "Not checked",
+      "required": "Required",
+      "optional": "Optional"
+    },
+    "actions": {
+      "request": "Allow access",
+      "checkAgain": "Check again",
+      "openSystemSettings": "Open system settings"
+    }
+  },
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "usage": "Usage",
+    "history": "History",
+    "prompt": "Prompt",
+    "dictionary": "Dictionary",
+    "profile": "Profile",
+    "settings": "Settings",
+    "readyStatus": "Ready · {{shortcut}}",
+    "openMenu": "Open navigation",
+    "closeMenu": "Close navigation"
+  },
+  "onboarding": {
+    "progress": "Step {{current}} of {{total}}",
+    "welcome": {
+      "eyebrow": "Write at the speed of thought",
+      "title": "Welcome to Open Dictate",
+      "description": "Turn your voice into polished text everywhere.",
+      "detail": "Hold one shortcut, speak naturally, and your finished text appears in any app.",
+      "getStarted": "Get started",
+      "privacy": "Your audio is processed only to create your text."
+    },
+    "language": {
+      "title": "Choose your languages",
+      "description": "Set the interface language and the language you will usually speak before Open Dictate starts.",
+      "interfaceLabel": "App language",
+      "interfaceDescription": "Menus, settings, and onboarding use this language.",
+      "speechLabel": "Primary spoken language",
+      "speechDescription": "Dictation starts with this language, and you can change it later in Settings."
+    },
+    "mode": {
+      "title": "Choose how to use Open Dictate",
+      "description": "Choose your own API key, fully private Local AI, or the managed Pro experience.",
+      "free": {
+        "title": "Free without account",
+        "description": "Use your own OpenAI API key. No account or subscription required.",
+        "price": "$0",
+        "featureOne": "All dictation features",
+        "featureTwo": "Usage billed directly by OpenAI",
+        "featureThree": "Key stored securely on this device",
+        "cta": "Use my API key"
+      },
+      "local": {
+        "title": "Local AI",
+        "description": "Completely free and private after a one-time model download.",
+        "price": "$0",
+        "featureOne": "Audio and text stay on this device",
+        "featureTwo": "Works offline after download",
+        "featureThree": "No account, API key, or subscription",
+        "cta": "Set up Local AI"
+      },
+      "pro": {
+        "title": "Open Dictate Pro",
+        "description": "$5/month includes a fixed monthly token allowance.",
+        "price": "$5/month",
+        "featureOne": "No API key setup",
+        "featureTwo": "Subscription tokens expire monthly",
+        "featureThree": "$5, $10, and $20 top-ups never expire",
+        "cta": "Create account"
+      }
+    },
+    "setup": {
+      "title": "Set up your experience",
+      "description": "Your credentials are protected and never shown in the interface after setup.",
+      "apiKey": {
+        "title": "Connect your OpenAI API key",
+        "description": "Your key is encrypted and stored privately on this device.",
+        "label": "OpenAI API key",
+        "placeholder": "sk-…",
+        "show": "Show key",
+        "hide": "Hide key",
+        "validate": "Test and continue",
+        "valid": "API key connected",
+        "invalid": "We couldn't validate this API key. Check it and try again.",
+        "help": "You can replace or remove the key later in Settings."
+      },
+      "local": {
+        "title": "Choose Local AI quality",
+        "description": "Download the model pair that best matches this device. You can change it later in Settings."
+      },
+      "account": {
+        "title": "Create your account",
+        "description": "Your account keeps your settings, allowance, and billing in sync.",
+        "signInTitle": "Sign in to Open Dictate Pro",
+        "signInDescription": "Use your existing account. If your subscription is active, you will continue without checkout.",
+        "createTab": "Create account",
+        "signInTab": "Sign in",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "you@example.com",
+        "password": "Password",
+        "passwordPlaceholder": "At least 8 characters",
+        "create": "Create account",
+        "signInSubmit": "Sign in and continue",
+        "signInError": "We couldn't sign you in. Check your email and password, then try again.",
+        "existing": "Already have an account?",
+        "signIn": "Sign in",
+        "terms": "By continuing, you agree to the Terms of Service and Privacy Policy."
+      },
+      "subscription": {
+        "title": "Start Open Dictate Pro",
+        "description": "Get a fixed monthly token allowance for $5/month and a setup-free experience.",
+        "plan": "Open Dictate Pro",
+        "price": "$5 per month",
+        "renewal": "Renews monthly. Cancel anytime.",
+        "included": "Fixed subscription tokens included",
+        "allowanceDescription": "Your fixed allowance is available for the billing month and expires at period end.",
+        "topUp": "$5, $10, or $20 top-ups",
+        "topUpDescription": "Purchase an additional token pack when needed. Purchased tokens never expire.",
+        "billingCycle": "Subscription tokens expire monthly",
+        "billingCycleDescription": "Subscription tokens are always used first, then replaced with a fresh allowance next billing period.",
+        "verificationTitle": "Verify your email to continue",
+        "verificationDescription": "We sent a verification link to {{email}}. Open it, then return here to continue securely.",
+        "emailFallback": "your email address",
+        "verificationCheck": "I've verified my email",
+        "verificationChecking": "Checking…",
+        "resendVerification": "Send again",
+        "verificationSent": "Verification email sent.",
+        "verificationSendError": "We couldn't send a verification email. Wait a moment and try again.",
+        "notVerified": "Your email is not verified yet. Open the link we sent, then try again.",
+        "verificationError": "We couldn't refresh your verification status. Check your connection and try again.",
+        "authRequired": "Your secure session is missing. Go back and create your account again.",
+        "secureTitle": "Secure checkout",
+        "secureDescription": "Stripe handles payment. Open Dictate never stores your card details.",
+        "checkout": "Continue to secure checkout",
+        "opening": "Opening checkout…",
+        "checkoutOpenedTitle": "Checkout opened in your browser",
+        "checkoutOpenedDescription": "Complete payment, then return here to confirm your subscription.",
+        "browserFallbackTitle": "Pay in your browser",
+        "browserFallbackDescription": "We couldn't open the payment page automatically. Copy the payment link and paste it into your browser.",
+        "retryBrowser": "Try opening again",
+        "openCheckoutLink": "Open payment page",
+        "copyCheckoutLink": "Copy payment link",
+        "checkoutLinkCopied": "Payment link copied.",
+        "checkoutLinkCopyError": "We couldn't copy the payment link. Select the link and copy it manually.",
+        "reopen": "Open again",
+        "verify": "I've completed checkout",
+        "verifying": "Checking…",
+        "createError": "We couldn't prepare secure checkout. Check your connection and try again.",
+        "configurationError": "Secure checkout is not configured for this build. Contact support.",
+        "openError": "We couldn't open secure checkout. Try again.",
+        "verifyError": "We haven't received confirmation yet. If you just paid, wait a moment and check again.",
+        "confirmed": "Your Pro subscription is active"
+      }
+    },
+    "permissions": {
+      "title": "Allow Open Dictate to work everywhere",
+      "description": "These permissions let Open Dictate hear you and insert text into the app you're using.",
+      "continueWhenReady": "Continue when required permissions are granted",
+      "microphone": {
+        "title": "Microphone",
+        "description": "Required to record your voice."
+      },
+      "accessibility": {
+        "title": "Text insertion",
+        "description": "Required to insert finished text into the focused application."
+      },
+      "screenRecording": {
+        "title": "Screen recording",
+        "description": "Optional. Used only for enhanced application context when enabled."
+      },
+      "startup": {
+        "title": "Start at login",
+        "description": "Keep Open Dictate ready whenever you sign in."
+      },
+      "states": {
+        "checking": "Checking…",
+        "granted": "Granted",
+        "notGranted": "Not granted",
+        "required": "Required",
+        "request": "Allow access"
+      }
+    },
+    "practice": {
+      "title": "Try your first dictation",
+      "description": "Place your cursor below, hold {{shortcut}}, speak, then release the keys.",
+      "sample": "Try saying: “Hey, can you send me that email tomorrow—actually, Friday?”",
+      "fieldPlaceholder": "Your polished text will appear here…",
+      "waiting": "Waiting for you to hold {{shortcut}}",
+      "listening": "Keep holding while you speak",
+      "successTitle": "You're ready to dictate",
+      "successDescription": "Open Dictate can now turn your voice into polished text in any app.",
+      "finish": "Start using Open Dictate",
+      "tryAgain": "Clear and try again"
+    }
+  },
+  "hud": {
+    "shortcut": "Hold {{shortcut}} to dictate",
+    "releaseToFinish": "Release to finish",
+    "escapeToCancel": "Esc to cancel",
+    "states": {
+      "starting": "Starting…",
+      "listening": "Listening…",
+      "processing": "Processing audio…",
+      "transcribing": "Transcribing…",
+      "polishing": "Polishing your text…",
+      "inserting": "Adding text…",
+      "inserted": "Text inserted",
+      "cancelled": "Dictation cancelled"
+    },
+    "errors": {
+      "generic": "Dictation failed. Try again.",
+      "microphone": "Microphone access is required",
+      "accessibility": "Text insertion permission is required",
+      "offline": "You're offline. Check your connection.",
+      "noSpeech": "No speech detected",
+      "tooShort": "Keep holding while you speak",
+      "transcription": "We couldn't transcribe this recording",
+      "insertion": "Text couldn't be inserted. It was copied instead.",
+      "apiKey": "Check your OpenAI API key in Settings",
+      "authentication": "Sign in again to use dictation",
+      "emailVerification": "Verify your email address before using dictation",
+      "apiQuota": "Your OpenAI API project has no available credits",
+      "rateLimit": "OpenAI is rate limiting requests. Try again shortly.",
+      "allowance": "Your token allowance is empty",
+      "localModel": "Install or repair the selected Local AI models in Settings"
+    },
+    "actions": {
+      "copyText": "Copy text",
+      "openPermissions": "Open permissions",
+      "openApiSettings": "Open API settings",
+      "purchaseTokens": "Purchase tokens"
+    }
+  },
+  "usage": {
+    "title": "Usage",
+    "subtitle": "See how your voice saves time and keeps your work moving.",
+    "period": {
+      "thisMonth": "This month",
+      "lastMonth": "Last month",
+      "last30Days": "Last 30 days",
+      "selectMonth": "Select month"
+    },
+    "hero": {
+      "eyebrow": "Time reclaimed",
+      "title": "You saved approximately {{time}} this month",
+      "description": "That's time you could spend thinking instead of typing.",
+      "increase": "{{value}} more than last month",
+      "decrease": "{{value}} less than last month",
+      "noComparison": "Start dictating to see your monthly comparison"
+    },
+    "metrics": {
+      "dictationTime": "Total dictation time",
+      "speakingTime": "Total speaking time",
+      "wordsGenerated": "Words generated",
+      "timeSaved": "Estimated typing time saved",
+      "dictations": "Dictations"
+    },
+    "chart": {
+      "title": "Monthly activity",
+      "minutes": "Minutes",
+      "words": "Words",
+      "tokens": "Tokens",
+      "empty": "Your activity will appear after your first dictation"
+    },
+    "allowance": {
+      "title": "Token allowance",
+      "used": "{{used}} of {{total}} tokens used",
+      "remaining": "{{count}} tokens remaining",
+      "totalRemaining": "{{count}} total remaining",
+      "subscriptionTokens": "Subscription · expires monthly",
+      "purchasedTokens": "Purchased · never expire",
+      "subscriptionFirst": "Subscription tokens are used first.",
+      "expires": "They expire {{date}}.",
+      "expiresMonthly": "They expire at the end of each billing month.",
+      "purchasedOnly": "Your subscription is inactive. Purchased tokens remain available and never expire.",
+      "renews": "Renews {{date}}",
+      "managed": "Included with Open Dictate Pro",
+      "byok": "Usage is billed through your OpenAI account",
+      "local": "All processing runs privately on this device",
+      "low": "Your allowance is running low",
+      "empty": "You've used your monthly allowance"
+    },
+    "plan": {
+      "title": "Subscription",
+      "free": "Free · Own API key",
+      "local": "Local AI",
+      "pro": "Open Dictate Pro",
+      "balance": "Purchased token balance",
+      "active": "Your subscription is active",
+      "pastDue": "Payment needs attention",
+      "inactive": "No active subscription",
+      "manageBilling": "Manage billing"
+    },
+    "calculation": {
+      "title": "How saved time is estimated",
+      "description": "We compare your speaking pace with an average typing speed of 45 words per minute."
+    },
+    "recent": {
+      "title": "Recent activity",
+      "empty": "No dictations yet this month"
+    }
+  },
+  "history": {
+    "title": "History",
+    "subtitle": "Find, copy, and reuse your previous dictations.",
+    "searchPlaceholder": "Search dictated text…",
+    "resultCount_one": "{{count}} dictation",
+    "resultCount_other": "{{count}} dictations",
+    "filters": {
+      "application": "Application",
+      "date": "Date",
+      "allApplications": "All applications",
+      "allDates": "All dates",
+      "clear": "Clear filters"
+    },
+    "groups": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "earlier": "Earlier"
+    },
+    "item": {
+      "unknownApplication": "Unknown application",
+      "duration": "{{duration}} recording",
+      "copied": "Text copied",
+      "reused": "Text is ready to reuse"
+    },
+    "details": {
+      "title": "Dictation details",
+      "generatedText": "Generated text",
+      "application": "Application",
+      "created": "Created",
+      "duration": "Duration",
+      "language": "Language",
+      "tokens": "Tokens used"
+    },
+    "delete": {
+      "title": "Delete this dictation?",
+      "description": "This removes the dictation from your history. This action cannot be undone.",
+      "confirm": "Delete dictation",
+      "success": "Dictation deleted",
+      "undo": "Undo"
+    },
+    "empty": {
+      "title": "Your dictations will appear here",
+      "description": "Hold {{shortcut}} anywhere to create your first one."
+    },
+    "noResults": {
+      "title": "No dictations found",
+      "description": "Try another search or clear your filters."
+    },
+    "loadMore": "Load more history"
+  },
+  "prompt": {
+    "title": "Prompt",
+    "subtitle": "Tell Open Dictate how your finished text should sound.",
+    "saveStatus": {
+      "saved": "All changes saved",
+      "saving": "Saving changes…",
+      "error": "Changes couldn't be saved",
+      "localOnly": "Saved on this device"
+    },
+    "presets": {
+      "title": "Start with a style",
+      "professional": "Professional",
+      "concise": "Concise",
+      "technical": "Technical",
+      "danish": "Write in Danish",
+      "writeInLanguage": "Write in {{language}}"
+    },
+    "editor": {
+      "label": "Custom instructions",
+      "placeholder": "For example: Always write professional emails. Keep the tone warm and concise.",
+      "description": "These instructions are applied after transcription and before text is inserted.",
+      "characterCount": "{{count}} of {{max}} characters",
+      "clearTitle": "Clear custom instructions?",
+      "clearDescription": "Open Dictate will return to its default polishing style."
+    },
+    "behaviors": {
+      "title": "Default polishing",
+      "removeFillers": "Remove filler words",
+      "removeFillersDescription": "Remove words such as “um”, “uh”, and repeated starts.",
+      "punctuation": "Correct punctuation",
+      "punctuationDescription": "Add punctuation and capitalization automatically.",
+      "formatLists": "Format lists",
+      "formatListsDescription": "Turn spoken sequences into readable lists when appropriate."
+    },
+    "preview": {
+      "title": "Live preview",
+      "input": "What you said",
+      "output": "Open Dictate writes",
+      "sampleInput": "hey can you send me that email tomorrow um actually Friday",
+      "sampleOutput": "Hey, can you send me that email tomorrow—actually, Friday.",
+      "empty": "Add instructions to preview your writing style."
+    },
+    "examples": {
+      "title": "Ideas for your prompt",
+      "professional": "Always write professional emails.",
+      "language": "Write the output in {{language}}.",
+      "detail": "Make technical explanations detailed."
+    }
+  },
+  "dictionary": {
+    "title": "Dictionary",
+    "subtitle": "Teach Open Dictate the names and terms that matter to you.",
+    "addTerm": "Add term",
+    "searchPlaceholder": "Search your dictionary…",
+    "count_one": "{{count}} term",
+    "count_other": "{{count}} terms",
+    "columns": {
+      "heardAs": "Heard as",
+      "writeAs": "Write as",
+      "language": "Language",
+      "updated": "Updated"
+    },
+    "form": {
+      "addTitle": "Add a dictionary term",
+      "editTitle": "Edit dictionary term",
+      "description": "Open Dictate will use this correction when it polishes your transcription.",
+      "wrongLabel": "When I say",
+      "wrongPlaceholder": "supabace",
+      "correctLabel": "Write",
+      "correctPlaceholder": "Supabase",
+      "languageLabel": "Language",
+      "allLanguages": "All languages",
+      "preview": "“{{wrong}}” will be written as “{{correct}}”",
+      "add": "Add to dictionary",
+      "save": "Save changes",
+      "required": "Enter both the spoken and written form",
+      "duplicate": "This correction already exists"
+    },
+    "delete": {
+      "title": "Remove this term?",
+      "description": "Open Dictate will no longer apply this correction.",
+      "confirm": "Remove term",
+      "success": "Term removed",
+      "undo": "Undo"
+    },
+    "empty": {
+      "title": "Build your personal dictionary",
+      "description": "Add product names, people, companies, and technical terms so they're always written correctly.",
+      "examples": "Try Supabase, React Native, Cloudflare, or OpenAI."
+    },
+    "noResults": {
+      "title": "No terms found",
+      "description": "Try another search."
+    },
+    "import": {
+      "title": "Import terms",
+      "description": "Add multiple terms from a CSV file.",
+      "action": "Import CSV"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "subtitle": "Manage your account, plan, and billing details.",
+    "identity": {
+      "title": "Personal information",
+      "name": "Name",
+      "email": "Email",
+      "emailVerified": "Email verified",
+      "emailNotVerified": "Email not verified",
+      "verifyEmail": "Send verification email",
+      "verificationSent": "Verification email sent.",
+      "verificationError": "We couldn't send a verification email. Wait a moment and try again.",
+      "updated": "Profile updated"
+    },
+    "plan": {
+      "title": "Your plan",
+      "free": "Free without account",
+      "freeDescription": "You use your own OpenAI API key and pay OpenAI directly.",
+      "local": "Local AI",
+      "localDescription": "Free, private, and processed entirely on this device.",
+      "change": "Change plan",
+      "pro": "Open Dictate Pro",
+      "proDescription": "$5/month with a fixed monthly token allowance.",
+      "balance": "Purchased token balance",
+      "balanceDescription": "Your subscription is inactive, but your purchased tokens remain available and never expire.",
+      "price": "$5/month",
+      "status": "Billing status",
+      "renews": "Renews {{date}}",
+      "cancels": "Ends {{date}}",
+      "pastDue": "Your latest payment was unsuccessful",
+      "cancelled": "Subscription cancelled",
+      "inactive": "No active subscription"
+    },
+    "tokens": {
+      "title": "Remaining tokens",
+      "total": "Total tokens available",
+      "subscription": "Subscription · expires monthly",
+      "purchased": "Purchased · never expire",
+      "remaining": "{{count}} remaining",
+      "used": "{{count}} used this cycle",
+      "resets": "Allowance resets {{date}}",
+      "extra": "Purchased tokens do not expire",
+      "subscriptionFirst": "Subscription tokens are used first.",
+      "expires": "They expire {{date}}.",
+      "expiresMonthly": "They expire at the end of each billing month.",
+      "purchasedOnly": "Your subscription is inactive. Purchased tokens remain available and never expire."
+    },
+    "billing": {
+      "title": "Billing",
+      "manage": "Manage billing",
+      "purchase": "Purchase additional tokens",
+      "history": "Billing history",
+      "date": "Date",
+      "description": "Description",
+      "amount": "Amount",
+      "status": "Status",
+      "invoice": "Invoice",
+      "paid": "Paid",
+      "pending": "Pending",
+      "failed": "Failed",
+      "empty": "No billing history yet"
+    },
+    "topup": {
+      "title": "Add more tokens",
+      "description": "Choose a token pack for your Open Dictate balance.",
+      "tokenPack": "Token pack",
+      "tokens": "{{count}} tokens",
+      "neverExpires": "Purchased tokens never expire.",
+      "subscriptionFirst": "Open Dictate uses your subscription tokens first, then your purchased balance.",
+      "continue": "Continue with {{amount}}"
+    },
+    "security": {
+      "title": "Account security",
+      "password": "Password",
+      "changePassword": "Change password",
+      "signOutEverywhere": "Sign out on all devices"
+    },
+    "guest": {
+      "title": "You're using Open Dictate without an account",
+      "description": "Create an account to use Open Dictate Pro and sync settings across devices.",
+      "createAccount": "Create account"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Choose how Open Dictate behaves on this device.",
+    "general": {
+      "title": "General",
+      "interfaceLanguage": "Interface language",
+      "interfaceLanguageDescription": "Changes menus, labels, and messages in Open Dictate.",
+      "launchAtStartup": "Launch at startup",
+      "launchAtStartupDescription": "Keep Open Dictate ready after you sign in.",
+      "runInBackground": "Run in background",
+      "runInBackgroundDescription": "Keep dictation available when the main window is closed."
+    },
+    "dictation": {
+      "title": "Dictation",
+      "shortcut": "Global shortcut",
+      "shortcutDescription": "Hold this shortcut to record, then release to finish.",
+      "recordShortcut": "Record a new shortcut",
+      "pressShortcut": "Press and hold your preferred keys…",
+      "shortcutConflict": "This shortcut is already used by another action.",
+      "microphone": "Microphone",
+      "microphoneDescription": "Choose the input Open Dictate records from.",
+      "systemDefault": "System default",
+      "testMicrophone": "Test microphone",
+      "stopTest": "Stop test",
+      "inputLevel": "Input level",
+      "noMicrophones": "No microphones found",
+      "transcriptionLanguage": "Transcription language",
+      "transcriptionLanguageDescription": "Choose a language or let Open Dictate detect it automatically."
+    },
+    "ai": {
+      "title": "AI plan and local models",
+      "description": "Change processing method at any time. Local AI never sends audio or text off this device.",
+      "currentPlan": "Current processing plan",
+      "switchPlan": "Switch plan",
+      "switchPlanDescription": "Use an API key, Local AI, or Open Dictate Pro.",
+      "mode": {
+        "free": "Own API key",
+        "freeDescription": "OpenAI processes dictation using your securely stored API key.",
+        "local": "Local AI",
+        "localDescription": "Whisper and Qwen run entirely on this device.",
+        "pro": "Open Dictate Pro",
+        "proDescription": "Open Dictate securely manages processing through your Pro plan."
+      },
+      "localSetupTitle": "Local AI models",
+      "localSetupDescription": "Select a quality level and download its models.",
+      "uninstallTitle": "Uninstall Local AI",
+      "uninstallDescription": "Delete all downloaded AI models and free their disk space.",
+      "uninstallConfirmDescription": "All downloaded Local AI models will be deleted from this device. You can download them again later.",
+      "uninstall": "Uninstall models"
+    },
+    "api": {
+      "title": "API configuration",
+      "managedTitle": "Managed by Open Dictate Pro",
+      "managedDescription": "Your subscription securely handles transcription requests. No API key is stored on this device.",
+      "keyTitle": "OpenAI API key",
+      "keyDescription": "Your key is encrypted and stored privately on this device.",
+      "keyConnected": "API key connected",
+      "keyMissing": "No API key connected",
+      "maskedKey": "Saved key ending in {{suffix}}",
+      "replaceKey": "Replace API key",
+      "removeKey": "Remove API key",
+      "removeTitle": "Remove your API key?",
+      "removeDescription": "Dictation will stop working until another key is connected.",
+      "testSuccess": "Connection successful",
+      "testFailure": "Connection failed. Check the key and try again."
+    },
+    "permissions": {
+      "title": "Permissions",
+      "description": "Open Dictate only requests access needed for features you use.",
+      "microphone": "Microphone",
+      "microphoneDescription": "Allows Open Dictate to record your voice.",
+      "accessibility": "Text insertion",
+      "accessibilityDescription": "Allows Open Dictate to insert text into the focused app.",
+      "screenRecording": "Screen recording",
+      "screenRecordingDescription": "Optional access for enhanced application context.",
+      "statusGranted": "Allowed",
+      "statusDenied": "Not allowed",
+      "statusUnknown": "Not checked",
+      "checkAgain": "Check again",
+      "openSystemSettings": "Open system settings"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "saveHistory": "Save dictation history",
+      "saveHistoryDescription": "Keep generated text so you can find and reuse it later.",
+      "retention": "History retention",
+      "retentionDescription": "Choose when old dictations are deleted automatically.",
+      "retention7": "7 days",
+      "retention30": "30 days",
+      "retention90": "90 days",
+      "retention365": "1 year",
+      "analytics": "Share anonymous analytics",
+      "analyticsDescription": "Help improve reliability without sharing audio or dictated text.",
+      "crashReports": "Send crash reports",
+      "crashReportsDescription": "Share technical diagnostics when the app encounters a problem.",
+      "clearCache": "Clear local cache",
+      "clearCacheDescription": "Remove cached history and temporary audio from this device.",
+      "clearCacheTitle": "Clear local cache?",
+      "clearCacheConfirm": "Clear cache",
+      "clearCacheSuccess": "Local cache cleared"
+    },
+    "session": {
+      "title": "Session",
+      "signedInAs": "Signed in as {{email}}",
+      "localProfile": "Using without sign-in",
+      "localProfileDescription": "Open Dictate is using your own OpenAI API key on this device.",
+      "signOut": "Sign out",
+      "signOutTitle": "Sign out of Open Dictate?",
+      "signOutDescription": "Downloaded Local AI models will be deleted from this device.",
+      "localSignOutTitle": "Delete everything and sign out?",
+      "localSignOutDescription": "You are using Open Dictate without signing in and with your own API key. Continuing deletes the API key, history, dictionary, prompts, and local settings, then signs you out. This cannot be undone.",
+      "localSignOutConfirm": "Delete all and sign out"
+    },
+    "danger": {
+      "title": "Danger zone",
+      "deleteAccount": "Delete account",
+      "deleteAccountDescription": "Permanently delete your account, cloud history, and subscription data.",
+      "deleteAccountTitle": "Permanently delete your account?",
+      "deleteAccountConfirm": "Delete my account",
+      "deleteAccountWarning": "This action cannot be undone."
+    }
+  },
+  "localAi": {
+    "quality": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "installed": "Models are ready",
+    "downloading": "Downloading models…",
+    "downloadRequired": "Download required",
+    "downloadProgress": "Local model download progress",
+    "privacy": "After download, audio and text processing stays entirely on this device and works without internet.",
+    "downloadError": "The download could not be completed. Check your connection and disk space, then try again; partial downloads resume automatically.",
+    "useModels": "Use Local AI",
+    "downloadAndContinue": "Download and continue"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email address",
+    "passwordLength": "Use at least 8 characters",
+    "tooLong": "Keep this under {{max}} characters"
+  },
+  "errors": {
+    "generic": "Something went wrong. Try again.",
+    "offline": "You're offline. Check your connection.",
+    "unauthorized": "Your session has expired. Sign in again.",
+    "notFound": "We couldn't find what you were looking for.",
+    "rateLimited": "Too many requests. Wait a moment and try again."
+  },
+  "time": {
+    "secondsShort": "{{count}} sec",
+    "minutesShort": "{{count}} min",
+    "hoursShort": "{{count}} hr",
+    "hoursAndMinutes": "{{hours}} hr {{minutes}} min"
+  }
+}

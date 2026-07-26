@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-uninstall-local-models"
+description = "Enables the uninstall_local_models command without any pre-configured scope."
+commands.allow = ["uninstall_local_models"]
+
+[[permission]]
+identifier = "deny-uninstall-local-models"
+description = "Denies the uninstall_local_models command without any pre-configured scope."
+commands.deny = ["uninstall_local_models"]

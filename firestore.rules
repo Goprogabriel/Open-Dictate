@@ -1,0 +1,150 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function owns(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function validLanguage(language) {
+      return language in ['en', 'da', 'no', 'sv'];
+    }
+
+    function validDictionaryLanguage(language) {
+      return language == 'all' || validLanguage(language);
+    }
+
+    function validSettings(data) {
+      return data.keys().hasOnly([
+          'prompt',
+          'language',
+          'removeFillers',
+          'correctPunctuation',
+          'formatLists',
+          'updatedAt'
+        ])
+        && data.prompt is string
+        && data.prompt.size() <= 4000
+        && validLanguage(data.language)
+        && data.removeFillers is bool
+        && data.correctPunctuation is bool
+        && data.formatLists is bool
+        && data.updatedAt == request.time;
+    }
+
+    function validDictionaryEntry(data) {
+      return data.keys().hasOnly([
+          'spoken',
+          'replacement',
+          'language',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.spoken is string
+        && data.spoken.size() > 0
+        && data.spoken.size() <= 100
+        && data.replacement is string
+        && data.replacement.size() > 0
+        && data.replacement.size() <= 100
+        && validDictionaryLanguage(data.language)
+        && data.createdAt is timestamp
+        && data.updatedAt == request.time;
+    }
+
+    function validDictionaryTombstone(data) {
+      return data.keys().hasOnly([
+          'deleted',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.keys().hasAll([
+          'deleted',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.deleted == true
+        && data.createdAt is timestamp
+        && data.updatedAt == request.time;
+    }
+
+    function validDictionaryRecord(data) {
+      return data.keys().hasAll(['deleted'])
+        ? validDictionaryTombstone(data)
+        : validDictionaryEntry(data);
+    }
+
+    match /users/{uid} {
+      allow read: if owns(uid);
+      allow create, delete: if false;
+      allow update: if owns(uid)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'name',
+          'language',
+          'updatedAt'
+        ])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 100
+        && validLanguage(request.resource.data.language)
+        && request.resource.data.updatedAt == request.time;
+    }
+
+    match /settings/{uid} {
+      allow read: if owns(uid);
+      allow create, update: if owns(uid) && validSettings(request.resource.data);
+      allow delete: if false;
+    }
+
+    match /dictionary/{uid}/entries/{entryId} {
+      allow read: if owns(uid);
+      allow create: if owns(uid) && validDictionaryRecord(request.resource.data);
+      allow update: if owns(uid)
+        && validDictionaryRecord(request.resource.data)
+        && request.resource.data.createdAt == resource.data.createdAt
+        // A tombstone is terminal for this document id. Re-adding a term must
+        // create a new document with a new UUID.
+        && (
+          !resource.data.keys().hasAll(['deleted'])
+          || request.resource.data.keys().hasAll(['deleted'])
+        );
+      // Deletions are durable tombstones so an offline device cannot resurrect
+      // a stale entry. Physical deletion is reserved for a future trusted GC.
+      allow delete: if false;
+    }
+
+    match /dictations/{uid}/items/{dictationId} {
+      allow read, delete: if owns(uid);
+      allow create, update: if false;
+    }
+
+    match /usage/{uid}/periods/{periodId} {
+      allow read: if owns(uid);
+      allow write: if false;
+    }
+
+    match /subscriptions/{uid} {
+      allow read: if owns(uid);
+      allow write: if false;
+
+      match /ledger/{entryId} {
+        allow read: if owns(uid);
+        allow write: if false;
+      }
+    }
+
+    match /billing_events/{eventId} {
+      allow read, write: if false;
+    }
+
+    match /transcription_jobs/{jobId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

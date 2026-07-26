@@ -1,0 +1,4 @@
+# Optional local-only origin pin for managed-backend builds.
+# Copy this file to .cargo/config.toml and replace the placeholder.
+[env]
+OPEN_DICTATE_MANAGED_API_ORIGIN = { value = "https://REGION-PROJECT_ID.cloudfunctions.net", force = false }
