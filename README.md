@@ -10,7 +10,7 @@ Open Dictate is an open-source voice-dictation app for macOS. Hold the global sh
 
 > This is an early preview for macOS 12+. The app is ad-hoc signed but not Apple-notarized, so macOS may ask you to approve it under **System Settings → Privacy & Security**.
 
-![Open Dictate usage dashboard](docs/images/open-dictate-usage.png)
+![Welcome to Open Dictate](docs/images/open-dictate-usage.png)
 
 ## What it does
 
